@@ -1,0 +1,79 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  .responsive(width, auto, 540px, 720px, 960px, 1140px);
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.box {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  float: right;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.columns(xs, @columns-count);
+.defaults(xs);
+@media (min-width: @width-sm) {
+  .columns(sm, @columns-count);  
+  .defaults(sm);
+}
+@media (min-width: @width-md) {
+  .columns(md, @columns-count);
+  .defaults(md);
+}
+@media (min-width: @width-lg) {
+  .columns(lg, @columns-count);
+  .defaults(lg);
+}
+@media (min-width: @width-xl) {
+  .columns(xl, @columns-count);
+  .defaults(xl);
+}
+.columns(@size, @n, @i: 1) when (@i <= @n) {
+    .@{size}-@{i} {
+        flex-basis: (@i * 100% / @n);
+        max-width: (@i * 100% / @n);
+    }
+    .@{size}-offset-@{i} {
+      margin-right: (@i * 100% / @n);
+    }
+    .columns(@size, @n, @i + 1)
+}
+
+.defaults(@size) {
+  .@{size}-auto {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+  .@{size}-shrink {
+    flex: 0 0 auto;
+  }
+  .@{size}-top {
+    align-items: flex-start;
+  } 
+  .@{size}-middle{
+    align-items: center;
+  }
+  .@{size}-bottom{
+    align-items: flex-end;
+  }
+  .@{size}-hidden{
+    visibility: hidden;
+  }
+  .@{size}-visible{
+    visibility: visible;
+  }
+}

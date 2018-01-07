@@ -1,0 +1,23 @@
+
+@import "variables.less";
+
+.responsive(@css-property, @val-xs, @val-sm, @val-md, @val-lg, @val-xl) {
+  //@css-property: @val-xs; 
+  @{css-property}: @val-xs;
+  @media (min-width: @width-sm) {
+    @{css-property}: @val-sm;  
+  }
+  @media (min-width: @width-md) {
+    @{css-property}: @val-md;  
+  }
+  @media (min-width: @width-lg) {
+    @{css-property}: @val-lg;  
+  }
+  @media (min-width: @width-xl) {
+    @{css-property}: @val-xl;  
+  }
+}
+
+@import 'basis.less';
+
+@import 'grid/grid.less';
