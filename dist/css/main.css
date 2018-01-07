@@ -1,8 +1,7 @@
 html {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: sans-serif;
   direction: rtl;
   text-align: right;
-  font-family: tahoma;
 }
 .container {
   margin-right: auto;
