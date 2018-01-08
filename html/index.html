@@ -3,44 +3,123 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../dist/css/main.css" />
+    <link rel="stylesheet" href="../dist/css/sprooz.css" />
     <style>
       .row {
         margin-top: 10px;
         margin-bottom: 10px;
       }
       .box {
-        direction: ltr;
-        text-align: center;
+        padding: 15px;
+      }
+      .bg {
         background-color: rgba(86,61,124,.15);
         border: 1px solid rgba(86,61,124,.2);
-        padding: 25px;
       }
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="brand">
+          <a href="#" >برند</a>
+        </div>
+        <div class="right active">
+          <a href="#" >خانه</a>
+        </div>
+        <div class="right">
+          <a href="#" >پنل ادمین</a>
+        </div>
+        <div class="left">
+          <a><button class="button">ورود</button></a>
+        </div>
+        <div class="left">
+          <a><button class="button danger ">ثبت نام</button></a>
+        </div>
+      </div>
+    </nav>
     <div class="container">
+      <p>نوشته ی تست!</p>
+      <h2>گرید: </h2>
       <div class="row">
-        <div class="box xs-auto">1 of 2</div>
-        <div class="box xs-auto">1 of 2</div>
+        <div class="box bg xs-auto">1of2</div>
+        <div class="box bg xs-auto" style="text-align: left">1of2</div>
       </div>
       <div class="row">
-        <div class="box xs-auto">1 of 3</div>
-        <div class="box xs-auto">1 of 3</div>
-        <div class="box xs-auto">1 of 3</div>
+        <div class="box bg xs-auto">1of3</div>
+        <div class="box bg xs-auto">1of3</div>
+        <div class="box bg xs-auto">1of3</div>
       </div>
       <div class="row">
-        <div class="box xs-shrink">Just the size needed</div>
-        <div class="box xs-auto">fill the rest</div>
-        <div class="box xs-shrink">need!!</div>
+        <div class="box bg xs-shrink">Just the size needed</div>
+        <div class="box bg xs-auto">fill the rest</div>
+        <div class="box bg xs-shrink">need!!</div>
       </div>
       <div class="row">
-        <div class="box xl-6 md-12">xl-6 md-12</div>
-        <div class="box xl-6 md-12">xl-6 md-12</div>
+        <div class="box bg xl-6 md-12">xl-6 md-12</div>
+        <div class="box bg xl-6 md-12">xl-6 md-12</div>
       </div>
       <div class="row">
-        <div class="box xs-auto md-hidden lg-visible">Fill the rest (Hidden at md)</div>
-        <div class="box md-3">md-3</div>
+        <div class="box bg xs-auto md-hidden lg-visible">Fill the rest (Hidden at md)</div>
+        <div class="box bg md-3">md-3</div>
+      </div>
+      <div class="row">
+        <div class="box bg xs-12">
+          <pre>کمی تست!</pre>
+          <a href="#">LINK!</a>
+          <span class="text-small">نوشته ی کوچک</span>
+          <span class="text-medium">نوشته ی متوسط</span>
+          <span class="text-large">نوشته ی بزرگ</span>
+          <span>نوشته ی معمولی</span>
+          <br/>
+          <button class="button" disabled>Button default</button>
+          <button class="button primary">Button primary</button>
+          <button class="button info">Button info</button>
+          <button class="button success">Button success</button>
+          <button class="button warning">Button warning</button>
+          <button class="button danger">Button danger</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box bg xs-12">
+          <button class="button round">Button default round</button>
+          <button class="button primary round">Button primary round</button>
+          <button class="button info round">Button info round</button>
+          <button class="button success round">Button success round</button>
+          <button class="button warning round">Button warning round</button>
+          <button class="button danger round">Button danger round</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box bg xs-12">
+          <button class="button primary fill" disabled>Button primary fill disabled</button>
+          <button class="button info round fill">Button info fill round</button>
+          <button class="button success round fill">Button success fill round</button>
+          <button class="button warning round fill">Button warning fill round</button>
+          <button class="button danger round fill">Button danger fill round</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box bg xs-12">
+          <div class="buttons">
+              <button class="button primary fill">Button primary fill</button>
+              <button class="button">Button</button>
+              <button class="button warning fill" disabled>Button warning fill disabled</button>
+              <button class="button info fill">Button info fill</button>
+              <button class="button">Button</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box bg xs-12">
+          <div class="buttons">
+              <button class="button primary fill large"><i class="fab fa-apple"></i> Button primary fill</button>
+              <button class="button">Button</button>
+              <button class="button warning fill" disabled>Button warning fill disabled</button>
+              <button class="button info fill">Button info fill</button>
+              <button class="button">Button</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,8 +1,10 @@
 # A simple rtl css framework
 
-Hello. nothing much to show for now just a grid system.
+Hello.
 
 Any help is appreciated :)
+
+Grid system, typography, navbar, buttons.
 
 ## Compile
 

@@ -1,0 +1,54 @@
+.navbar {
+  background-color: @primary;
+  color: @white;
+  display: flex;
+  .container {
+    font-size: @size-4;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .right, .left {
+    &:hover, &.active {
+      background-color: darken(@primary, 5%);
+    }
+  }
+  .brand {
+    margin-left: .5em;
+    margin-right: -.3em;
+    font-weight: @weight-bold;
+  }
+  .right, .left, .brand {
+    height: 1.7em;
+    padding: 0.3em;
+    float: right;
+    position: relative;
+    &.left {
+      float: left;
+    } 
+    & > a {
+      color: @white;
+      text-decoration: none;
+    }
+  }
+  
+  &.dark {
+    .right, .left{
+      &:hover, &.active {
+        background-color: darken(@grey-darker, 5%);
+      }
+    }
+    background-color: @grey-darker;
+  }
+
+  &.light {
+    .right, .left{
+      &:hover, &.active {
+        background-color: darken(@white-bis, 5%);
+      }
+      & > a {
+        color: @black;
+      }
+    }
+    background-color: @white-ter;
+  } 
+}

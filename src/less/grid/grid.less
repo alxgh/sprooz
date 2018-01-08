@@ -1,13 +1,15 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  .responsive(width, auto, 540px, 720px, 960px, 1140px);
+  .responsive(width, @container-xs, @container-sm, @container-md, @container-lg, @container-xl);
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
   box-sizing: border-box;
   display: flex;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
   margin-right: -15px;
