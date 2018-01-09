@@ -9,8 +9,9 @@ body {
   line-height: @line-height;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6, strong,kbd, pre, code, blockquote {
   color: @heading-color;
+  font-family: @font-family;
 }
 
 h1 {
@@ -50,7 +51,6 @@ h6{
 
 code, pre, blockquote {
   background: @block-bg;
-  font-family: @font-family;
 }
 
 code {
@@ -84,4 +84,15 @@ a:hover, a:visited{
 }
 .text-xlarge {
   font-size: @size-3;
+}
+
+kbd {
+  background-color: @black;
+  color: @white;
+  border-radius: @border-radius;
+  padding: .2rem .4rem;
+  kbd {
+    font-weight: @weight-semibold;
+    padding: 0;
+  }
 }
