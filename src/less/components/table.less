@@ -1,0 +1,108 @@
+.table-responsive {
+  overflow-x: scroll;
+}
+.table {
+  margin-bottom: 1rem;
+  border-spacing: 0;
+  width: 100%;
+  td, th {
+    border-bottom: .1rem solid @grey-lighter;
+    padding: .7rem;
+  }
+  thead tr{
+    border-bottom: .3rem;
+    font-weight: @weight-semibold;
+  }
+  &.bordered {
+    border: .1rem solid @grey-lighter;
+    td {
+      border-right: .1rem solid @grey-lighter;
+      &:first-child {
+        border-right: none;
+      }
+    }
+    tbody tr:last-child td{
+      border-bottom: none;
+    }
+  }
+  &.stripped tbody tr:nth-child(2n-1) {
+    background-color: @white-ter;
+  }
+  &, &.stripped {
+    tbody tr {
+      &.bg-primary, &.bg-info, &.bg-success, &.bg-warning, &.bg-danger{
+        td {
+          border-bottom-color: transparent;
+        }
+      }
+      &.bg-primary {
+        background-color: lighten(@primary, 5%);
+      }
+      &.bg-info {
+        background-color: lighten(@info, 25%);
+      }
+      &.bg-success {
+        background-color: lighten(@success, 30%);
+      }
+      &.bg-warning {
+        background-color: lighten(@warning, 20%);
+      }
+      &.bg-danger {
+        background-color: lighten(@danger, 30%);
+      }
+    }
+  }
+  &.hoverable tbody tr:hover{
+    background-color: @white-ter;
+  }
+  &.dark {
+    background: @black-ter;
+    color: @white;
+    td, th {
+      border-bottom: .1rem solid @grey-dark;
+      padding: .7rem;
+    }
+    &.bordered {
+      border: .1rem solid @grey-dark;
+      td {
+        border-right: .1rem solid @grey-dark;
+        &:first-child {
+          border-right: none;
+        }
+      }
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+    }
+    &.stripped tbody tr:nth-child(2n-1) {
+      background-color: @grey-darker;
+    }
+    &.hoverable tbody tr:hover{
+      background-color: @grey-darker;
+    }
+    &, &.stripped {
+      tbody tr {
+        &.bg-primary, &.bg-info, &.bg-success, &.bg-warning, &.bg-danger{
+          td {
+            border-bottom-color: transparent;
+          }
+        }
+        &.bg-primary {
+          background-color: @primary;
+        }
+        &.bg-info {
+          background-color: @info;
+        }
+        &.bg-success {
+          background-color: @success;
+        }
+        &.bg-warning {
+          background-color: @warning;
+        }
+        &.bg-danger {
+          background-color: @danger;
+        }
+      }
+    }
+  }
+}

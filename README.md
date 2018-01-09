@@ -4,7 +4,7 @@ Hello.
 
 Any help is appreciated :)
 
-Grid system, typography, navbar, buttons.
+Grid system, typography, navbar, buttons, tables.
 
 ## Compile
 
