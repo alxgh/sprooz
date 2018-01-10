@@ -1,42 +1,35 @@
 .alert {
   margin-top: 1rem;
   padding: 1.2rem;
-  color: @main-color;
-  border: .05rem solid @white-ter;
+  color: @white;
   border-radius: @border-radius;
   &.default {
     background-color: @white-bis;
     color: @grey;
   }
   &.dark {
-    color: @white;
     background-color: @black-ter;
   }
   &.grey {
     background-color: @grey-lighter;
-    color: @black;
-    border-color: @grey-light;
+    color: @black-ter;
   }
   &.primary {
     color: @white;
-    background-color: lighten(@primary, 5%);
-    border-color: @primary;
+    background-color: @primary;
   }
   &.info {
-    background-color: lighten(@info, 25%);
-    border-color: @info;
+    background-color: @info;
   }
   &.success {
-    background-color: lighten(@success, 30%);
-    border-color: @success;
+    background-color: @success;
   }
   &.warning {
-    background-color: lighten(@warning, 20%);
-    border-color: @warning;
+    color: @black-ter;
+    background-color: @warning;
   }
   &.danger {
-    background-color: lighten(@danger, 30%);
-    border-color: @danger;
+    background-color: @danger;
   }
   a {
     color: inherit;
