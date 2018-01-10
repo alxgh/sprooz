@@ -1,0 +1,51 @@
+.box {
+  padding: 1.2rem;
+  border-radius: @border-radius;
+  border: 1px solid @grey-lighter;
+  box-shadow: 0 .25rem .5rem 0 @grey-light;
+  &.sharp {
+    border-radius: 0;
+    .top-image img {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  &.no-shadow {
+    box-shadow: none;
+  }
+  .caption {
+    font-size: @size-4;
+    font-weight: @weight-bold;
+    margin-bottom: 1rem;
+    margin-top: .3rem;
+  }
+  .top-image {
+    margin: -1.2rem;
+    margin-bottom: 0;
+    img {
+      border-top-left-radius: @border-radius;
+      border-top-right-radius: @border-radius;
+    }
+    
+  }
+  &:hover {
+    transition: .3s;
+    box-shadow: 0 .5rem 1rem 0 @grey-light;
+  }
+  &.no-hover:hover {
+    box-shadow: 0 .25rem .5rem 0 @grey-light;
+  }
+  &.no-shadow {
+    &.no-hover:hover {
+      box-shadow: none;
+    }
+  }
+  .divider {
+    height: .1rem;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: @grey-lighter;
+  }
+}
